@@ -3,7 +3,6 @@
 # Current source: https://github.com/rapid7/metasploit-framework
 ##
 require 'msf/core'
-require 'pry'
 class MetasploitModule < Msf::Auxiliary
 
   include Msf::Exploit::Remote::TcpServer
@@ -16,7 +15,7 @@ class MetasploitModule < Msf::Auxiliary
         This module provides a lister to accept credentials stolen with the
         poovey PAM module.
       },
-      'Author'      => ['jrozner'],
+      'Author'      => ['jrozner', 'maus', 'javier didn\'t do shit'],
       'License'     => MSF_LICENSE,
       'Actions'     =>
         [
